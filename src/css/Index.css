@@ -1,0 +1,110 @@
+/*---------------------------------------------------*/ 
+/*                  Color Pallet                     */
+/*---------------------------------------------------*/ 
+:root {
+  --app-dark-gray: #303030;
+  --app-lith-gray: #dedcdc;
+  --app-white-text:  #e4e2e2;
+  --app-blue: #2e5991;
+  --app-dark-blue: #254978;
+  --app-medium-blue:  #6d7886;
+  --ligh-blue-background: #ecf2f9;
+  --ligh-yellow: #fbfec0;
+  --star-color: #ffd700;
+}
+
+/*---------------------------------------------------*/ 
+/*             Container Classes                     */
+/*---------------------------------------------------*/ 
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--app-dark-blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: min(100% - 35px, 1080px);
+  height: 100vh;
+  margin-inline: auto;
+  outline: 2px dashed rgb(205, 33, 148);
+  position: fixed;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  text-align: center;
+}
+
+h1, h2, p {
+  color: var(--app-lith-gray);
+}
+
+
+/*---------------------------------------------------*/ 
+/*                Container Starts                   */
+/*---------------------------------------------------*/ 
+.star-rating{
+  justify-content: row;
+  width: 40%;
+  outline: 2px dashed rgb(145, 205, 33);     
+}
+
+/*---------------------------------------------------*/ 
+/*                     Start                         */
+/*---------------------------------------------------*/ 
+
+.container-star{
+  padding: 5px 5px;
+}
+
+.star {
+  color: var(--star-color);
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.star-selected {
+  color: var(--star-color);
+}
+
+.star-unselected {
+  color: var(--app-medium-blue);
+}
+/*---------------------------------------------------*/ 
+/*                      Dialog                       */
+/*---------------------------------------------------*/ 
+
+.container-dialog{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  background-image: url('https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+
+section .dialog-btn{
+  position: absolute;
+  margin-top:35%;
+  margin-left: 20%;
+  padding: 0 20px;
+  height: 46px;
+  border-radius: 5px;
+  color:#dedcdc;
+  background-color: green;
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  cursor: pointer;
+}
