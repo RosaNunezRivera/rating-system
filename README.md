@@ -1,4 +1,4 @@
-# Rating System
+# Rating System in React
 
 ## Demo
 

@@ -9,19 +9,12 @@ function StarRating({ ratings }) {
 
     const handleStarClick = (index) => {
       const updatedStars = selectedStars.map((_, i) => i <= index);
-      console.log('Index:'+index);
       setSelectedStars(updatedStars);
+      setTextRating(ratings[index]);
     };
 
     useEffect(() => {
-        const selectedStarIndex = selectedStars.indexOf(true);
-        console.log('Selected Index:'+selectedStarIndex);
-        if (selectedStarIndex !== -1) {
-          setTextRating(ratings[selectedStarIndex]);
-        } else {
-          setTextRating('Your rating');
-        }
-      }, [selectedStars, ratings]);
+    }, [selectedStars]);
   
     return (
       <div className='StarRating'>
